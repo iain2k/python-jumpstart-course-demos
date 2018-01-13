@@ -18,6 +18,13 @@ class Creature:
 class Wizard(Creature):
 
     def attack(self, creature):
+        """
+        The attack method will attack and potentially kill the creature.
+
+        :param creature: A creature object which can fight another creature
+        :type creature: Creature
+        :return: True if the wizard wins, False if they are defeated.
+        """
         print("The wizard {} attacks {}!".format(
             self.name, creature.name
         ))
